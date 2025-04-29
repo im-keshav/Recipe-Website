@@ -65,3 +65,14 @@ You can easily customize the website by:
 ## License
 
 This project is open source and available under the MIT License. 
+
+## 🚀 How to Use
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/im-keshav/Recipe-Website.git
+
+👨‍🍳 Author
+Created with ❤️ by Keshav
+GitHub: @im-keshav
