@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Delicious Recipes</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search recipes...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Amazing Recipes</h1>
+            <p>Find the perfect recipe for any occasion</p>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="breakfast">Breakfast</button>
+                <button class="category-btn" data-category="lunch">Lunch</button>
+                <button class="category-btn" data-category="dinner">Dinner</button>
+                <button class="category-btn" data-category="dessert">Dessert</button>
+                <button class="category-btn" data-category="indian">Indian</button>
+            </div>
+        </section>
+
+        <section class="recipes-container" id="recipesContainer">
+            <!-- Recipe cards will be dynamically added here -->
+        </section>
+    </main>
+
+    <!-- Recipe Details Modal -->
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Recipe Title</h2>
+                <div class="modal-meta">
+                    <span id="modalTime">Time: 30 mins</span>
+                    <span id="modalDifficulty">Difficulty: Medium</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="Recipe Image">
+                </div>
+                <div class="modal-description">
+                    <h3>Description</h3>
+                    <p id="modalDescription">Recipe description goes here.</p>
+                </div>
+                <div class="modal-ingredients">
+                    <h3>Ingredients</h3>
+                    <ul id="modalIngredients">
+                        <!-- Ingredients will be added here -->
+                    </ul>
+                </div>
+                <div class="modal-instructions">
+                    <h3>Instructions</h3>
+                    <ol id="modalInstructions">
+                        <!-- Instructions will be added here -->
+                    </ol>
+                </div>
+                <div class="modal-links">
+                    <a id="modalSource" href="#" target="_blank" class="source-link">View Source</a>
+                    <a id="modalYoutube" href="#" target="_blank" class="youtube-link">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Delicious Recipes. All rights reserved.</p>
+    </footer>
+
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
